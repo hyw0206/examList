@@ -1,0 +1,12 @@
+/* Theme 스타일 작성 */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* :root : 어느곳에서 사용 가능하게 해 주는 선택자 */
+:root {
+  --color-gray-100: #F3F3F3;
+  --color-gray-500: #C4C4C4;
+  --color-gray-600: #AAA9A9;
+  --color-blue-600: #0074E9;
+  --color-black-700: #181818;
+}

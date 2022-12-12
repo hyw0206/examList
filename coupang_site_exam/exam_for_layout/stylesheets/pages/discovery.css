@@ -1,0 +1,106 @@
+/* CSS 작성 */
+/* 헤더 영역 */
+header {
+  width: 1020px;
+  margin: 100px auto 48px;
+}
+/* 오늘의 발견 영역 */
+.discovery {
+  width: 1020px;
+  height: 1010px;
+  margin: 48px auto 0;
+}
+/* 오늘의 발견 제목 영역 */
+.title {
+  margin-bottom: 24px;
+}
+.today_title, .today_subtitle {
+  display: inline-block;
+}
+.today_title {
+  height: 28px;
+  font-weight: lighter;
+  color: var(--color-black-700);
+}
+.today_subtitle {
+  position: relative;
+  bottom: 3px;
+  color: var(--color-gray-600);
+}
+.today_subtitle::before {
+  content: "|";
+  font-weight: lighter;
+  font-size: 20px;
+  height: 18px;
+  margin: 0 10px;
+}
+/* 오늘의 발견 이미지 영역 */
+.float-left {
+  float: left;
+}
+.img-card-big {
+  width: 502px;
+  height: 310px;
+  border: 1px solid var(--color-gray-500);
+  margin-right: 16px;
+  position: relative;
+}
+/* 오른쪽 끝 이미지 margin-right 설정, 아래쪽 간격 설정 */
+.img-card-big:nth-child(2), .img-card:nth-child(6){
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+.img-card:last-child {
+  margin-right: 0;
+}
+.img-card-big img {
+  position: relative;
+  top: 20px;
+  left: 28px;
+}
+.img-card {
+  width: 243px;
+  height: 310px;
+  border: 1px solid var(--color-gray-500);
+  margin-right: 16px;
+  position: relative;
+}
+.img-card img {
+  position: relative;
+  top: 14px;
+  left: 21px;
+}
+.img-card:hover, .img-card:focus-within, .img-card-big:hover, .img-card-big:focus-within {
+  border: 1px solid var(--color-blue-600);
+  
+}
+/* 버튼 관련 속성 */
+.img-card a:last-child, .img-card-big a:last-child {
+  text-decoration: none;
+  line-height: 42px;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-gray-600);
+  border: none;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  opacity: 0.6;
+  color: white;
+}
+.img-card a:last-child:hover, 
+.img-card-big a:last-child:hover,
+.img-card-big a:last-child:focus,
+.img-card a:last-child:focus{
+  width: 112px;
+  background-color: var(--color-blue-600);
+  opacity: 1;
+  transition: all 1s;
+}
+.img-card a:last-child:hover::before, 
+.img-card-big a:last-child:hover::before,
+.img-card-big a:last-child:focus::before,
+.img-card a:last-child:focus::before {
+  content: "구매하기 ";
+}

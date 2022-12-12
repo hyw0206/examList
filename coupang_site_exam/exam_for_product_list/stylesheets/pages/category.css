@@ -1,0 +1,189 @@
+/* 카테고리별 추천 광고상품 */
+.border--brown {
+  border: 1px solid var(--color-brown-300);
+  border-left: none;
+  border-right: none;
+}
+.border--green {
+  border: 1px solid var(--color-green-700);
+  border-left: none;
+  border-right: none;
+}
+.green {
+  color: var(--color-green-700) !important; 
+}
+.bg_green {
+  background-color: var(--color-green-700) !important;
+}
+.hidden {
+  display: none;
+}
+.coupang_logo {
+  margin: 100px auto 48px;
+  width: 1020px;
+}
+
+.wrap {
+  margin: 48px auto auto;
+  width: 1020px;
+}
+
+.recommend_product {
+  margin-bottom: 24px;
+}
+.product_subtitle {
+  color: var(--color-back);
+  font-weight: 600;
+}
+.product_title {
+  margin: 0;
+}
+.blue {
+  color: var(--color-blue-600);
+}
+.product_area {
+  display: flex;
+  margin-bottom: 24px;
+}
+.product_area:last-child {
+  margin-bottom: 14px;
+}
+.product_main {
+  width: 174px;
+}
+.category_title {
+  margin: 48px auto 8px 24px;
+  color: var(--color-brown-300);
+}
+.navigate {
+  margin: 8px auto 248px 24px;
+  color: var(--color-gray-700);
+  display: inline-block;
+}
+.nav_img {
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.33638 5L0 0.917474L0.974524 0L5.79817 4.54126C6.06728 4.79462 6.06728 5.20538 5.79817 5.45874L0.974524 10L0 9.08253L4.33638 5Z' fill='%23929292'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  margin-left: 4px;
+  width: 6px;
+  height: 10px;
+  display: inline-block;
+}
+.keyword_title {
+  margin: auto auto 12px 20px;
+}
+.keyword_list {
+  margin: 20px auto auto 24px;
+}
+.keyword_item {
+  height: 26px;
+  color: var(--color-brown-300);
+  border: 1px solid var(--color-gray-400);
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+.keyword_item.small {
+  width: 72px;
+}
+.keyword_item.medium {
+  width: 94px;
+}
+.keyword_item.large {
+  width: 117px;
+  margin-right: 33px;
+}
+.keyword_item:last-child {
+  margin-bottom: none;
+}
+.product_carousel {
+  position: relative;
+}
+.img_desc {
+  position: absolute;
+  top: 483px;
+  left: 30px;
+  width: 260px;
+  height: 90px;
+  background-color: var(--color-brown-300);
+  text-align: center;
+  color: #ffffff;
+}
+.img_desc h3 {
+  margin-bottom: 8px;
+}
+.img_desc span {
+  font-size: 1.4rem;
+}
+.indicator { 
+  position: absolute;
+  top: 597px;
+  left: 144px;
+  width: 32px;     
+}
+
+.indicator a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-gray-600);
+  border-radius: 14px;
+}
+.indicator .on {
+  margin-right: 8px;
+  background-color: var(--color-gray-700);
+}
+.product_set {
+  display: flex;
+  margin-top: 8px;
+}
+.product_set.line {
+  position: relative;
+  margin-top: none;
+  margin-bottom: 8px;
+}
+.product_set.line::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 0.5px;
+  width: 528px;
+  background-color: #aaa9a9;
+  
+}
+.product_item {
+  width: 160px;
+  height: 300px;
+}
+.product_item:first-child {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.product_item:last-child {
+  margin-left: 12px;
+}
+.product_item.up {
+  margin-top: 9px;
+}
+.product_item.down {
+  margin-bottom: 9px;
+}
+.product_infor {
+  margin-top: 12px;
+}
+.product_name {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.product_sale {
+  color: var(--color-red-500);
+  margin-bottom: 4px;
+  font-size: 1.4rem;
+}
+.product_value h3 {
+  display: inline;
+  font-size: 1.6rem;
+}
+.product_value img {
+  margin-left: 6px;
+}

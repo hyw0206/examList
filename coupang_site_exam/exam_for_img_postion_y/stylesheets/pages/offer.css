@@ -1,0 +1,112 @@
+/* 오늘의 쇼핑 제안 */
+/* 전역 설정*/
+i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+/* 헤더 영역 */
+.header_logo {
+  margin: 100px auto 48px 147px;
+}
+.header_logo picture source, .header_logo picture img {
+  width: 246px;
+  height: 56px;
+}
+/* 오늘의 쇼핑 제안 영역 */
+.today_offer {
+  margin: 48px auto auto 145px;
+}
+/* 오늘의 쇼핑 제안 - 헤더 영역 */
+.logo {
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.92305 8.07715C6.73108 8.07715 6.5685 8.22243 6.54209 8.41758L4.61902 22.6281C4.60371 22.7412 4.63686 22.8555 4.70991 22.9416C4.78295 23.0277 4.88874 23.0771 4.99997 23.0771H25C25.1112 23.0771 25.217 23.0277 25.29 22.9416C25.3631 22.8555 25.3962 22.7412 25.3809 22.6281L23.4579 8.41758C23.4314 8.22243 23.2689 8.07715 23.0769 8.07715H6.92305Z' fill='%23FFADDB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.1864 6.34665C11.6992 6.83746 11.5384 7.43569 11.5384 7.79786V11.7032C11.5384 12.2494 11.0218 12.6922 10.3846 12.6922C9.74731 12.6922 9.23071 12.2494 9.23071 11.7032V7.79786C9.23071 7.04422 9.53149 5.96874 10.4289 5.06479C11.3633 4.12355 12.8524 3.46143 14.9999 3.46143C17.1474 3.46143 18.6366 4.12355 19.571 5.06479C20.4684 5.96874 20.7692 7.04422 20.7692 7.79786V11.7032C20.7692 12.2494 20.2526 12.6922 19.6153 12.6922C18.9781 12.6922 18.4615 12.2494 18.4615 11.7032V7.79786C18.4615 7.43569 18.3007 6.83746 17.8135 6.34665C17.3633 5.89313 16.5448 5.43945 14.9999 5.43945C13.4551 5.43945 12.6366 5.89313 12.1864 6.34665Z' fill='%23FF2E89'/%3E%3Cpath d='M4.95637 21.9229C4.83786 21.9229 4.72547 21.9586 4.6496 22.0205C3.91909 22.6165 2.58698 24.3128 4.29133 26.3986C4.36176 26.4848 4.49538 26.5382 4.6404 26.5382H25.4052C25.5502 26.5382 25.6838 26.4848 25.7542 26.3986C27.4686 24.3006 25.9415 22.6015 25.2293 22.0205C25.1535 21.9586 25.0411 21.9229 24.9226 21.9229H4.95637Z' fill='%23FF2E89'/%3E%3C/svg%3E%0A");
+}
+.offer_header {
+  margin-bottom: 24px;
+}
+.offer_header * {
+  vertical-align: middle;
+}
+.offer_header h2 {
+  color: var(--color-back);
+  display: inline-block;
+}
+/* 오늘의 쇼핑 제안 - 메인 영역 */
+.offer_main {
+  display: flex;
+}
+.product_card {
+  width: 200px;
+  height: 270px;
+  margin-right: 5px;
+  position: relative;
+}
+.product_card:last-child {
+  margin-right: 0;
+}
+.sale {
+  color: var(--color-white);
+  text-align: center;
+  line-height: 30px;
+  width: 53px;
+  height: 30px;
+  background-color: var(--color-red-500);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 4px;
+}
+.product_card .product {
+  margin: 0 auto;
+  display: block;
+}
+
+.product_information {
+  width: 172px;
+  height: 46px;
+  margin: 12px 14px 38px;
+  
+}
+.product_name {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.product_ship {
+  width: 55px;
+  height: 16px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+.product_ship_free {
+  font-size: 1.4rem;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: var(--color-gray-700);
+}
+.product_rating {
+  font-size: 1.4rem;
+  display: flex;
+  overflow: hidden;
+}
+.rating_image_four_half {
+  background-image: url(../../assets/sprites/rating-stars.png);
+  width: 68px;
+  background-position-y: 25px;
+}
+.rating_image_four {
+  background-image: url(../../assets/sprites/rating-stars.png);
+  width: 68px;
+  background-position-y: 40px;
+}
+.rating_image_five {
+  background-image: url(../../assets/sprites/rating-stars.png);
+  width: 68px;
+  background-position-y: 12px;
+}
+.rating_count {
+  font-size: 1.4rem;
+  width: 45px;
+  margin-left: 4px;
+  line-height: 12px;
+  color: var(--color-gray-700);
+}
